@@ -16,9 +16,12 @@ Each guess is validated to ensure it falls within the game's number range and is
 **Responsive Design:** 
 The website layout adjusts to fit various screen sizes, ensuring a pleasant gaming experience on both desktops and mobile devices.
 
-**Technologies Used**
+**Technologies Used:**
+
 **HTML:** Structures the web content and layout.
+
 **CSS:** Styles the appearance of the game, including layout, colors, and fonts.
+
 **JavaScript:** Powers the game logic, random number generation, and user interaction handling.
 
 **How to Play?**
