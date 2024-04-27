@@ -21,7 +21,11 @@ Technologies Used
 **JavaScript:** Powers the game logic, random number generation, and user interaction handling.
 
 **How to Play?**
+
 **Start the Game:** Load the website in your browser to start a new game session.
+
 **Enter your guess:** Use the input field to enter your guess for the random number.
+
 **Submit:** Click the "Check" button to submit your guess.
+
 **Repeat:** Continue guessing until you correctly guess the number.
