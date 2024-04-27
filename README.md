@@ -1,4 +1,5 @@
-**Guess The Number Game Website**
+**Guess The Number Game Website**:
+
 This repository contains the source code for a simple "Guess the Number" game website built using HTML, CSS, and JavaScript. The game challenges players to guess a randomly generated number. The website is designed to be user-friendly and responsive, making it accessible on both desktop and mobile devices.
 
 **Features**
