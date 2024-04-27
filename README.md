@@ -33,3 +33,7 @@ The website layout adjusts to fit various screen sizes, ensuring a pleasant gami
 **Submit:** Click the "Check" button to submit your guess.
 
 **Repeat:** Continue guessing until you correctly guess the number.
+
+
+**LIVE LINK TO THE WEBSITE**
+https://8tsqpr8pjaez50t4uzfrhg.on.drv.tw/Guess-the-number-using-html-css-js/guessthenumber.html
