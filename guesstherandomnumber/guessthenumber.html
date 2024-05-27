@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Guess the Number</h3>
+        <br>
+        <input type="number" id="numbertobeguessed" required>
+        <button id="checkButton" onclick="guessnumber()" disabled>CHECK</button>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+    <script>
+        var number = document.getElementById("numbertobeguessed");
+        var checkButton = document.getElementById("checkButton");
+        var randomnum = Math.floor(Math.random() * 10) + 1;
+        var score = 0;
+        console.log(randomnum);
+        number.addEventListener('input', function() {
+            if (number.value) {
+                checkButton.disabled = false;
+                checkButton.style.cursor = 'pointer';
+            } else {
+                checkButton.disabled = true;
+                checkButton.style.cursor = 'not-allowed';
+            }
+        });
+        function guessnumber() {
+            var enterednumber = parseInt(number.value);
+            if (randomnum === enterednumber) {
+                showModal("Hurray! You guessed the number correctly. Your score is: " + (++score), "success");
+                randomnum = Math.floor(Math.random() * 10) + 1; // Generate a new random number
+                console.log(randomnum);
+            } else {
+                showModal("Wrong number. Your score is: " + (--score), "error");
+                console.log(randomnum);
+            }
+            number.value = ''; // Clear the input field
+            checkButton.disabled = true; // Disable the button again
+            checkButton.style.cursor = 'not-allowed';
+        }
+        function showModal(message, type) {
+            var modal = document.getElementById("modal");
+            var modalMessage = document.getElementById("modal-message");
+            var modalClose = document.getElementById("modal-close");
+            modalMessage.textContent = message;
+            if (type === "success") {
+                modalMessage.style.color = "green";
+            } else {
+                modalMessage.style.color = "red";
+            }
+            modal.style.display = "block";
+            modalClose.onclick = function() {
+                modal.style.display = "none";
+            };
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: add background to the content for better readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+button {
+    border-radius: 10px;
+    background-color: aqua;
+    border: 1px solid blue;
+    cursor: not-allowed; /* Show a not-allowed cursor when the button is disabled */
+}
+button:enabled {
+    cursor: pointer; /* Change to pointer when the button is enabled */
+}
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    border-radius: 10px;
+}
+.modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-close:hover,
+.modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#modal-message {
+    font-size: 18px;
+}
