@@ -36,4 +36,4 @@ The website layout adjusts to fit various screen sizes, ensuring a pleasant gami
 
 
 **LIVE LINK TO THE WEBSITE**
-https://8tsqpr8pjaez50t4uzfrhg.on.drv.tw/Guess-the-number-using-html-css-js/guessthenumber.html
+https://guessthenumber-web.netlify.app/
